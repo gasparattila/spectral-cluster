@@ -1,0 +1,15 @@
+[project]
+name = "spectral-cluster"
+version = "0.1"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-learn"
+]
+
+[project.optional-dependencies]
+gpu = ["cupy"]
+
+[build-system]
+requires = ["setuptools>=42", "pybind11~=2.10.4"]
+build-backend = "setuptools.build_meta"
