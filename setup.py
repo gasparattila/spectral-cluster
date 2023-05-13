@@ -2,6 +2,7 @@ from setuptools import setup
 from pybind11.setup_helpers import Pybind11Extension
 
 setup(
+    py_modules=["spectral_cluster"],
     ext_modules=[
         Pybind11Extension(
             "_spectral_cluster_impl",
