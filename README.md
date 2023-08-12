@@ -11,6 +11,10 @@ To download and install the library, run the following commands:
 git clone https://github.com/gasparattila/spectral-cluster --recurse-submodules --shallow-submodules --depth 1
 pip install ./spectral-cluster
 ```
+Alternatively, you may download a pre-build binary for Python 3.11 on Windows:
+```
+pip install https://github.com/gasparattila/spectral-cluster/releases/download/v1.0/spectral_cluster-1.0-cp311-cp311-win_amd64.whl
+```
 
 ## Usage
 
