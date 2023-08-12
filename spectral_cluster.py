@@ -59,7 +59,7 @@ def solve(adj_matrix: NDArray[np.bool_] | scipy.sparse.spmatrix,
         else:
             ev = _spectral_cluster_impl.get_eigenvectors_from_dense(
                 adj_matrix, **kwargs)
-    return k_means(ev, cluster_count)[1]
+    return k_means(ev, cluster_count, n_init='auto')[1]
 
 
 def generate_sbm(sizes: NDArray[np.int_], prob_matrix: NDArray[np.float_], *,
